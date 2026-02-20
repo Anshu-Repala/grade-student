@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/validate" method="POST">
+        {%csrf_token%}
+        <h1>welcome to the student grading application</h1>
+        <h2>you ask website to check the grades of students</h2>
+        enter a student1 marks <input type="text" name="num1">
+        enter a student2 marks<input type="text"name="num2">
+        <button type="submit">check result</button>
+        the grade for student1 is {{s1}}
+        the grade for student2 is {{s2}}
+    </form>
+</body>
+</html>
